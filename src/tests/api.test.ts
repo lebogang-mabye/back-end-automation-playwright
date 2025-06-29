@@ -32,6 +32,8 @@ test('T01 - Ensure Correct API Endpoint Schema Configuration', async ({ request 
   expect(data.length).toBeGreaterThan(0);
 });
 
+
+// Actual number of Countries is 250
 test('T02 - Confirm there are 195 countries', async ({ request }) => {
   const response = await request.get(ALL_FIELDS_URL);
   expect(response.ok()).toBeTruthy();
