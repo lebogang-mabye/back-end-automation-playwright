@@ -18,8 +18,12 @@ jobs:
         node-version: '20'
     - run: npm ci
     - run: npm run test
-    - name: Upload Playwright Report
+    - name: Generate Allure Report
+      run: |
+        npx allure generate allure-results --clean -o allure-report
+    - name: Upload Allure Report
       uses: actions/upload-artifact@v3
       with:
-        name: playwright-report
-        path: playwright-report
+        name: allure-report
+        path: allure-report
+    

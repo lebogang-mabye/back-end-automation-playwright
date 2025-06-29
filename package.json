@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:allure": "playwright test && allure generate allure-results --clean -o allure-report && allure open allure-report",
     "test:headed": "playwright test --headed",
     "test:report": "playwright show-report"
   },
@@ -19,5 +20,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "zod": "^3.25.67"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
   }
 }

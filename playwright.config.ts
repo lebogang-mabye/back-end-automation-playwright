@@ -2,7 +2,11 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   use: {
-    baseURL: 'https://restcountries.com',
+    baseURL: process.env.BASE_URL || 'https://restcountries.com',
   },
-  reporter: [['list'], ['html', { outputFolder: 'playwright-report' }]],
+  reporter: [
+    ['list'],
+    ['html', { outputFolder: 'playwright-report' }],
+    ['allure-playwright']
+  ],
 });

@@ -1,0 +1,14 @@
+Languages: {
+  afr: 'Afrikaans',
+  eng: 'English',
+  nbl: 'Southern Ndebele',
+  nso: 'Northern Sotho',
+  sot: 'Southern Sotho',
+  ssw: 'Swazi',
+  tsn: 'Tswana',
+  tso: 'Tsonga',
+  ven: 'Venda',
+  xho: 'Xhosa',
+  zul: 'Zulu'
+}
+SASL present: false
