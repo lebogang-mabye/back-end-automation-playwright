@@ -13,8 +13,3 @@ This project contains API automation tests for REST Countries API using Playwrig
 npm install
 npx playwright test
 npx playwright show-report
-
-## Allure Report
-Run locally:
-```bash
-npm run test:allure
